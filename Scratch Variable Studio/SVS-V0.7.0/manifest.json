@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Scratch Variable Studio",
+  "version": "0.7.0",
+  "description": "Scratch variable monitor costume editor with reliable selection and text tools, and an original-monitor onion-skin reference.",
+  "permissions": [],
+  "host_permissions": [
+    "https://scratch.mit.edu/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://scratch.mit.edu/projects/*"
+      ],
+      "js": [
+        "svs.js"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ],
+  "action": {
+    "default_title": "Scratch Variable Studio"
+  }
+}
