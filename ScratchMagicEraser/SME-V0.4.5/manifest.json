@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Scratch Magic Eraser",
+  "version": "0.1.0",
+  "description": "Remove connected white or checkerboard backgrounds from images before importing them as Scratch costumes.",
+  "permissions": [],
+  "host_permissions": ["https://scratch.mit.edu/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://scratch.mit.edu/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
